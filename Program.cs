@@ -1,4 +1,4 @@
-﻿using ConsoleAppAnimalSounds.Animals;
+﻿using ConsoleAppAnimalSounds.Animals.Base;
 
 namespace ConsoleAppAnimalSounds
 {
@@ -6,16 +6,16 @@ namespace ConsoleAppAnimalSounds
     {
         static void Main(string[] args)
         {
-            List<Animal> animals = new List<Animal>
-            {
+            List<BaseAnimal> animals =
+            [
                 new Dog(),
                 new Cat(),
                 new Cow()
-            };
+            ];
 
             foreach (var animal in animals)
             {
-                Console.WriteLine($"{animal.Type} makes sound: {animal.MakeSound()}");
+                Console.WriteLine($"{animal.AnimalType()} makes sound: {animal.MakeSound()}");
             }
         }
     }

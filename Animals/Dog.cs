@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleAppAnimalSounds.Animals
+﻿
+namespace ConsoleAppAnimalSounds.Animals.Base
 {
-    public class Dog : Animal
+    public class Dog : BaseAnimal
     {
-        public override string Type => "Dog";
         public override string MakeSound() => "Ham";
     }
 }
